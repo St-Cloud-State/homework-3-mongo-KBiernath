@@ -1,0 +1,606 @@
+Script started on 2025-04-15 01:59:40+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="189" LINES="23"]
+[0;32m@KBiernath [0m➜ [1;34m/workspaces/homework-3-mongo-KBiernath [0;36m([1;31mmain[0;36m) [0m$ sudo apt-get update
+
+0% [Working]
+            
+Hit:1 https://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod focal InRelease
+
+0% [Waiting for headers] [Waiting for headers] [Connecting to repo.mongodb.org] [Waiting for headers]
+                                                                                                     
+Hit:2 https://dl.yarnpkg.com/debian stable InRelease
+
+                                                                                                     
+0% [Waiting for headers] [Waiting for headers] [Connecting to repo.mongodb.org]
+                                                                               
+Hit:3 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 InRelease
+
+                                                                               
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers]
+                                                                    
+Hit:4 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease
+
+                                                                    
+0% [Waiting for headers] [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers] [Connecting to packagecloud.io]
+0% [Waiting for headers] [Waiting for headers] [Connecting to packagecloud.io]
+                                                                              
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:5 https://packagecloud.io/github/git-lfs/ubuntu focal InRelease
+
+0% [Waiting for headers] [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:6 http://archive.ubuntu.com/ubuntu focal InRelease
+
+                                              
+0% [Waiting for headers]
+                        
+Hit:7 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:8 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+
+                                              
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+                        
+Hit:9 http://security.ubuntu.com/ubuntu focal-security InRelease
+
+                        
+0% [Working]
+20% [Working]
+             
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 35%
+
+Reading package lists... 35%
+
+Reading package lists... 35%
+
+Reading package lists... 35%
+
+Reading package lists... 49%
+
+Reading package lists... 49%
+
+Reading package lists... 62%
+
+Reading package lists... 62%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 84%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+[0;32m@KBiernath [0m➜ [1;34m/workspaces/homework-3-mongo-KBiernath [0;36m([1;31mmain[0;36m) [0m$ sudo apt-get install -y mongodb
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 35%
+
+Reading package lists... 35%
+
+Reading package lists... 35%
+
+Reading package lists... 35%
+
+Reading package lists... 49%
+
+Reading package lists... 49%
+
+Reading package lists... 62%
+
+Reading package lists... 62%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 67%
+
+Reading package lists... 78%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+The following packages were automatically installed and are no longer required:
+  mongodb-database-tools mongodb-mongosh
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libboost-filesystem1.71.0 libboost-iostreams1.71.0 libboost-program-options1.71.0 libgoogle-perftools4 libpcap0.8 libsnappy1v5 libtcmalloc-minimal4 libyaml-cpp0.6 mongo-tools
+  mongodb-clients mongodb-server mongodb-server-core
+The following packages will be REMOVED:
+  mongodb-org mongodb-org-database mongodb-org-database-tools-extra mongodb-org-mongos mongodb-org-server mongodb-org-shell mongodb-org-tools
+The following NEW packages will be installed:
+  libboost-filesystem1.71.0 libboost-iostreams1.71.0 libboost-program-options1.71.0 libgoogle-perftools4 libpcap0.8 libsnappy1v5 libtcmalloc-minimal4 libyaml-cpp0.6 mongo-tools mongodb
+  mongodb-clients mongodb-server mongodb-server-core
+0 upgraded, 13 newly installed, 7 to remove and 46 not upgraded.
+Need to get 56.9 MB of archives.
+After this operation, 12.1 MB disk space will be freed.
+
+0% [Working]
+            
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpcap0.8 amd64 1.9.1-3ubuntu1.20.04.1 [128 kB]
+
+0% [1 libpcap0.8 14.0 kB/128 kB 11%]
+                                    
+2% [Working]
+            
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libboost-filesystem1.71.0 amd64 1.71.0-6ubuntu6 [242 kB]
+
+2% [2 libboost-filesystem1.71.0 6848 B/242 kB 3%]
+                                                 
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libboost-iostreams1.71.0 amd64 1.71.0-6ubuntu6 [237 kB]
+
+                                                 
+4% [3 libboost-iostreams1.71.0 4392 B/237 kB 2%]
+                                                
+5% [Working]
+            
+Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 libboost-program-options1.71.0 amd64 1.71.0-6ubuntu6 [342 kB]
+
+5% [4 libboost-program-options1.71.0 0 B/342 kB 0%]
+                                                   
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libtcmalloc-minimal4 amd64 2.7-1ubuntu2 [93.0 kB]
+
+                                                   
+8% [5 libtcmalloc-minimal4 33.2 kB/93.0 kB 36%]
+                                               
+9% [Waiting for headers]
+                        
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libgoogle-perftools4 amd64 2.7-1ubuntu2 [195 kB]
+
+9% [6 libgoogle-perftools4 29.1 kB/195 kB 15%]
+                                              
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libyaml-cpp0.6 amd64 0.6.2-4ubuntu1 [124 kB]
+
+                                              
+11% [7 libyaml-cpp0.6 49.2 kB/124 kB 40%]
+                                         
+Get:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 mongo-tools amd64 3.6.3-0ubuntu1 [12.3 MB]
+
+                                         
+13% [8 mongo-tools 49.2 kB/12.3 MB 0%]
+                                      
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libsnappy1v5 amd64 1.1.8-1build1 [16.7 kB]
+
+                                      
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 mongodb-clients amd64 1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3 [21.6 MB]
+
+33% [10 mongodb-clients 15.2 kB/21.6 MB 0%]
+                                           
+65% [Working]
+             
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 mongodb-server-core amd64 1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3 [21.6 MB]
+
+65% [11 mongodb-server-core 131 kB/21.6 MB 1%]
+                                              
+97% [Working]
+             
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 mongodb-server all 1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3 [12.5 kB]
+
+97% [12 mongodb-server 0 B/12.5 kB 0%]
+                                      
+98% [Working]
+             
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 mongodb amd64 1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3 [9640 B]
+
+98% [13 mongodb 0 B/9640 B 0%]
+                              
+100% [Working]
+              
+Fetched 56.9 MB in 1s (88.6 MB/s)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 70155 files and directories currently installed.)
+Removing mongodb-org (6.0.22) ...
+Removing mongodb-org-database (6.0.22) ...
+Removing mongodb-org-tools (6.0.22) ...
+Removing mongodb-org-database-tools-extra (6.0.22) ...
+Removing mongodb-org-mongos (6.0.22) ...
+Removing mongodb-org-server (6.0.22) ...
+Removing mongodb-org-shell (6.0.22) ...
+Selecting previously unselected package libpcap0.8:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 70120 files and directories currently installed.)
+Preparing to unpack .../00-libpcap0.8_1.9.1-3ubuntu1.20.04.1_amd64.deb ...
+Unpacking libpcap0.8:amd64 (1.9.1-3ubuntu1.20.04.1) ...
+Selecting previously unselected package libboost-filesystem1.71.0:amd64.
+Preparing to unpack .../01-libboost-filesystem1.71.0_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost-filesystem1.71.0:amd64 (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libboost-iostreams1.71.0:amd64.
+Preparing to unpack .../02-libboost-iostreams1.71.0_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost-iostreams1.71.0:amd64 (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libboost-program-options1.71.0:amd64.
+Preparing to unpack .../03-libboost-program-options1.71.0_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost-program-options1.71.0:amd64 (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libtcmalloc-minimal4:amd64.
+Preparing to unpack .../04-libtcmalloc-minimal4_2.7-1ubuntu2_amd64.deb ...
+Unpacking libtcmalloc-minimal4:amd64 (2.7-1ubuntu2) ...
+Selecting previously unselected package libgoogle-perftools4:amd64.
+Preparing to unpack .../05-libgoogle-perftools4_2.7-1ubuntu2_amd64.deb ...
+Unpacking libgoogle-perftools4:amd64 (2.7-1ubuntu2) ...
+Selecting previously unselected package libyaml-cpp0.6:amd64.
+Preparing to unpack .../06-libyaml-cpp0.6_0.6.2-4ubuntu1_amd64.deb ...
+Unpacking libyaml-cpp0.6:amd64 (0.6.2-4ubuntu1) ...
+Selecting previously unselected package mongo-tools.
+Preparing to unpack .../07-mongo-tools_3.6.3-0ubuntu1_amd64.deb ...
+Unpacking mongo-tools (3.6.3-0ubuntu1) ...
+dpkg: error processing archive /tmp/apt-dpkg-install-6cZATL/07-mongo-tools_3.6.3-0ubuntu1_amd64.deb (--unpack):
+ trying to overwrite '/usr/bin/bsondump', which is also in package mongodb-database-tools 100.12.0
+dpkg-deb: error: paste subprocess was killed by signal (Broken pipe)
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../08-libsnappy1v5_1.1.8-1build1_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.8-1build1) ...
+Selecting previously unselected package mongodb-clients.
+Preparing to unpack .../09-mongodb-clients_1%3a3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3_amd64.deb ...
+Unpacking mongodb-clients (1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3) ...
+Selecting previously unselected package mongodb-server-core.
+Preparing to unpack .../10-mongodb-server-core_1%3a3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3_amd64.deb ...
+Unpacking mongodb-server-core (1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3) ...
+Selecting previously unselected package mongodb-server.
+Preparing to unpack .../11-mongodb-server_1%3a3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3_all.deb ...
+Unpacking mongodb-server (1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3) ...
+Selecting previously unselected package mongodb.
+Preparing to unpack .../12-mongodb_1%3a3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3_amd64.deb ...
+Unpacking mongodb (1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3) ...
+Errors were encountered while processing:
+ /tmp/apt-dpkg-install-6cZATL/07-mongo-tools_3.6.3-0ubuntu1_amd64.deb
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+[0;32m@KBiernath [1;31m➜ [1;34m/workspaces/homework-3-mongo-KBiernath [0;36m([1;31mmain[0;36m) [0m$ sudo mkdir -p /data/db
+[0;32m@KBiernath [0m➜ [1;34m/workspaces/homework-3-mongo-KBiernath [0;36m([1;31mmain[0;36m) [0m$ sudo mongod -- [Kdb [Kpath /data/db
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten] MongoDB starting : pid=9294 port=27017 dbpath=/data/db 64-bit host=codespaces-3bd750
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten] db version v3.6.8
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten] modules: none
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten] build environment:
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2025-04-15T02:01:41.666+0000 I CONTROL  [initandlisten] options: { storage: { dbPath: "/data/db" } }
+2025-04-15T02:01:41.666+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3457M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2025-04-15T02:01:41.873+0000 I STORAGE  [initandlisten] WiredTiger message [1744682501:873222][9294:0x77d6de2e8ac0], txn-recover: Set global recovery timestamp: 0
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2025-04-15T02:01:41.889+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.889+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 9d2d6a59-2a82-4366-b84f-707a768c46b3
+2025-04-15T02:01:41.896+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2025-04-15T02:01:41.899+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: e9ae4782-9b63-4fb3-b6c4-21fa5844f3e9
+2025-04-15T02:01:41.907+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2025-04-15T02:01:41.907+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 56d080d1-f0f4-4bc0-a25f-241c2f3e841d
+2025-04-15T02:01:41.907+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2025-04-15T02:01:41.919+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2025-04-15T02:01:41.919+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-15T02:01:41.919+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+mo  ^Z
+[1]+  Stopped                 sudo mongod --dbpath /data/db
+[0;32m@KBiernath [1;31m➜ [1;34m/workspaces/homework-3-mongo-KBiernath [0;36m([1;31mmain[0;36m) [0m$ bg
+[1]+ sudo mongod --dbpath /data/db &
+[0;32m@KBiernath [0m➜ [1;34m/workspaces/homework-3-mongo-KBiernath [0;36m([1;31mmain[0;36m) [0m$ mongo
+MongoDB shell version v3.6.8
+connecting to: mongodb://127.0.0.1:27017
+2025-04-15T02:02:55.515+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:41152 #1 (1 connection now open)
+2025-04-15T02:02:55.516+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:41152 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+Implicit session: session { "id" : UUID("7227ef18-686b-4a49-af2c-094e846e0c64") }
+MongoDB server version: 3.6.8
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	http://docs.mongodb.org/
+Questions? Try the support group
+	http://groups.google.com/group/mongodb-user
+Server has startup warnings: 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] 
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2025-04-15T02:01:41.888+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2025-04-15T02:01:41.889+0000 I CONTROL  [initandlisten] 
+> db.applications.insertOne({[3G[Jdb.applications.insertOne({[30G
+...   name: "John Doe",[5G[J  name: "John Doe",[24G
+...   zipcode: "12345",[5G[J  zipcode: "12345",[24G
+...   status: "received",[5G[J  status: "received",[26G
+...   notes: [][5G[J  notes: [][16G
+... });[5G[J});[8G
+2025-04-15T02:05:08.267+0000 I STORAGE  [conn1] createCollection: test.applications with generated UUID: a8b80ecc-1de0-4d6d-9a00-cdeec78997a8
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("67fdbed4e8885a7a99d30e4a")
+}
+> db.applications.findOne({ name: "John Doe" });[3G[Jdb.applications.findOne({ name: "John Doe" });[49G
+{
+	"_id" : ObjectId("67fdbed4e8885a7a99d30e4a"),
+	"name" : "John Doe",
+	"zipcode" : "12345",
+	"status" : "received",
+	"notes" : [ ]
+}
+> db.applications.updateOne([3G[Jdb.applications.updateOne([29G
+...   { name: "John Doe" },[5G[J  { name: "John Doe" },[28G
+...   { $push: { notes: "Credit check completed." } }[5G[J  { $push: { notes: "Credit check completed." } }[54G
+... );[5G[J);[7G
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> [3G[Jdb.applications.updateOne(   { name: "John Doe" },   { $push: { notes: "Credit check completed." } } );[106G[3G[Jdb.applications.findOne({ name: "John Doe" });[49G[3G[Jdb.applications.findOne({ name: "John Doe" });[49G
+{
+	"_id" : ObjectId("67fdbed4e8885a7a99d30e4a"),
+	"name" : "John Doe",
+	"zipcode" : "12345",
+	"status" : "received",
+	"notes" : [
+		"Credit check completed."
+	]
+}
+> db.applications.updateOne([3G[Jdb.applications.updateOne([29G
+...   { name: "John Doe" },[5G[J  { name: "John Doe" },[28G
+...   { $set: { status: "accepted" } }[5G[J  { $set: { status: "accepted" } }[39G
+... );[5G[J);[7G
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> [3G[Jdb.applications.updateOne(   { name: "John Doe" },   { $set: { status: "accepted" } } );[91G[3G[Jdb.applications.findOne({ name: "John Doe" });[49G[3G[Jdb.applications.findOne({ name: "John Doe" });[49G
+{
+	"_id" : ObjectId("67fdbed4e8885a7a99d30e4a"),
+	"name" : "John Doe",
+	"zipcode" : "12345",
+	"status" : "accepted",
+	"notes" : [
+		"Credit check completed."
+	]
+}
+> db.applications.updateOne([3G[Jdb.applications.updateOne([29G
+...   { name: "John Doe" },[5G[J  { name: "John Doe" },[28G
+...   {[5G[J  {[8G
+...     $set: { status: "accepted" },[5G[J    $set: { status: "accepted" },[38G
+...     $push: { notes: "Loan approved: 5 years at 3.5% interest." }[5G[J    $push: { notes: "Loan approved: 5 years at 3.5% interest." }[69G
+...   }[5G[J  }[8G
+... );[5G[J);[7G
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> [3G[Jdb.applications.updateOne(   { name: "John Doe" },   {     $set: { status: "accepted" },     $push: { notes: "Loan approved: 5 years at 3.5% interest." }   } );[163G[3G[Jdb.applications.findOne({ name: "John Doe" });[49G[3G[Jdb.applications.findOne({ name: "John Doe" });[49G
+{
+	"_id" : ObjectId("67fdbed4e8885a7a99d30e4a"),
+	"name" : "John Doe",
+	"zipcode" : "12345",
+	"status" : "accepted",
+	"notes" : [
+		"Credit check completed.",
+		"Loan approved: 5 years at 3.5% interest."
+	]
+}
+> exit[3G[Jexit[7G
+bye
+2025-04-15T02:07:54.978+0000 I NETWORK  [conn1] end connection 127.0.0.1:41152 (0 connections now open)
+[0;32m@KBiernath [1;31m➜ [1;34m/workspaces/homework-3-mongo-KBiernath [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-04-15 02:07:56+00:00 [COMMAND_EXIT_CODE="1"]
