@@ -1,0 +1,99 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Acme Financial Corp Special Loan Program</title>
+    <script>
+      function validateAcceptForm() {
+        const name    = document.getElementById("accept_name").value.trim();
+        const zipcode = document.getElementById("accept_zipcode").value.trim();
+        if (!name || !zipcode) {
+          alert("Error: Name and ZIP code are required.");
+          return false;
+        }
+        return true;
+      }
+
+      function validateCheckForm() {
+        const appNumber = document.getElementById("check_app_number").value.trim();
+        if (!appNumber) {
+          alert("Error: Application number is required.");
+          return false;
+        }
+        if (isNaN(appNumber)) {
+          alert("Error: Application number must be numeric.");
+          return false;
+        }
+        return true;
+      }
+
+      function validateChangeForm() {
+        const appNumber = document.getElementById("change_app_number").value.trim();
+        if (!appNumber) {
+          alert("Error: Application number is required.");
+          return false;
+        }
+        if (isNaN(appNumber)) {
+          alert("Error: Application number must be numeric.");
+          return false;
+        }
+        // new_status and note are both optional
+        return true;
+      }
+    </script>
+</head>
+<body>
+    <h1>Acme Financial Corp Special Loan Program</h1>
+
+    <!-- Accept Application -->
+    <h2>Accept New Application</h2>
+    <form action="/accept_application" method="POST" onsubmit="return validateAcceptForm()">
+        <label>Name:</label>
+        <input type="text" id="accept_name" name="name">
+        <label>ZIP Code:</label>
+        <input type="text" id="accept_zipcode" name="zipcode">
+        <button type="submit">Submit</button>
+    </form>
+    {% if accept_msg %}
+      <div>{{ accept_msg|safe }}</div>
+    {% endif %}
+    <hr>
+
+    <!-- Check Status -->
+    <h2>Check Application Status</h2>
+    <form action="/check_status" method="POST" onsubmit="return validateCheckForm()">
+        <label>Application Number:</label>
+        <input type="text" id="check_app_number" name="application_number">
+        <button type="submit">Check</button>
+    </form>
+    {% if check_msg %}
+      <div>{{ check_msg|safe }}</div>
+    {% endif %}
+    <hr>
+
+    <!-- Change Status / Add Note -->
+    <h2>Change Status / Add Note</h2>
+    <form action="/change_status" method="POST" onsubmit="return validateChangeForm()">
+        <label>Application Number:</label>
+        <input type="text" id="change_app_number" name="application_number">
+
+        <label>New Status (optional):</label>
+        <select id="new_status" name="new_status">
+            <option value="">--Leave Unchanged--</option>
+            <option value="received">received</option>
+            <option value="processing">processing</option>
+            <option value="accepted">accepted</option>
+            <option value="rejected">rejected</option>
+        </select>
+
+        <label>Note (optional):</label>
+        <input type="text" id="change_note" name="note">
+
+        <button type="submit">Submit</button>
+    </form>
+    {% if change_msg %}
+      <div>{{ change_msg|safe }}</div>
+    {% endif %}
+</body>
+</html>
